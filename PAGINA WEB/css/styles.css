@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    margin-top: 80px; /* Espacio para el header fijo */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Variables CSS */
+  :root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-accent: #28a745;
+    --color-accent-light: #00bfff; /* Azul claro */
+  }
+  
+  /* Estilos del header */
+  header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Header fijo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; 
+  }
+  
+  .logo {
+    float: left;
+    margin-top: 5px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex; /* Alinear icono y texto en horizontal */
+    align-items: center; /* Centrar verticalmente el icono y el texto */
+  }
+  
+  nav a:hover {
+    color: var(--color-primary);
+  }
+  
+  nav a i {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  nav ul li:last-child a {
+    margin-left: 15px;
+  }
+  
+  nav ul li:last-child a i {
+    font-size: 22px;
+    margin-right: 0;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Botón */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innotech - Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contacto.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo Innotech">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="productos.html"><i class="fas fa-mobile"></i> Productos</a></li>
+        <li><a href="autenticacion.html"><i class="fas fa-user"></i> Autenticación</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="contact">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form id="contactForm">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="button" id="whatsappButton">Enviar por WhatsApp</button> 
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Innotech. Todos los derechos reservados.</p> 
+  </div>
+</footer>
+
+<script src="js/contacto.js"></script>
+</body>
+</html>

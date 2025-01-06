@@ -1,0 +1,206 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #007bff, #6f42c1); 
+    padding: 100px 0;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-out; 
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .hero p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fff; 
+    margin-bottom: 30px;
+  }
+  
+  /* Categorías destacadas */
+  .featured-categories {
+    padding: 50px 0;
+  }
+  
+  .featured-categories h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative; 
+  }
+  
+  .featured-categories h2::after { 
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin: 20px auto 0; 
+    position: absolute; 
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .category-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .category {
+    text-align: center;
+    width: calc(33.33% - 20px); 
+    transition: transform 0.3s ease; 
+  }
+  
+  .category:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .category-image {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .category img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+  }
+  
+  .category:hover img {
+    transform: scale(1.1); 
+  }
+  
+  .category h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Productos destacados */
+  .featured-products {
+    padding: 50px 0;
+    background-color: #f0f0f0; 
+  }
+  
+  .featured-products h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Banner promocional */
+  .promotional-banner {
+    padding: 50px 0;
+  }
+  
+  .promotional-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Beneficios */
+  .beneficios {
+    padding: 50px 0;
+    text-align: center; 
+  }
+  
+  .beneficios-grid {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+  }
+  
+  .beneficio {
+    width: calc(33.33% - 30px); 
+    margin: 15px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .beneficio i {
+    font-size: 36px; 
+    color: var(--color-primary); 
+    margin-bottom: 15px; 
+  }
+  
+  .beneficio h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .beneficio p {
+    font-size: 16px;
+    color: var(--color-secondary); 
+  }
+  
+  /* Testimonios */
+  .testimonios {
+    padding: 50px 0;
+    background-color: #f0f0f0; 
+    text-align: center; 
+  }
+  
+  .testimonios-grid {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+  }
+  
+  .testimonio {
+    width: calc(50% - 30px); 
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonio i { 
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonio p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Llamada a la acción */
+  .llamada-accion {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .llamada-accion p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }

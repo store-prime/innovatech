@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innotech - Productos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/productos.css"> 
+  <link rel="stylesheet" href="css/responsive.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo Innotech">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="productos.html"><i class="fas fa-mobile"></i> Productos</a></li>
+        <li><a href="autenticacion.html"><i class="fas fa-user"></i> Autenticación</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="products">
+    <div class="container">
+      <div class="products-content"> 
+
+        <aside class="filters"> 
+          <h3>Filtrar por:</h3>
+          <div class="filter-category">
+            <h4>Categoría</h4>
+            <ul>
+              <li><a href="#" onclick="filtrarPorCategoria('Todas')"><i class="fas fa-list"></i> Todas</a></li> 
+              <li><a href="#" onclick="filtrarPorCategoria('Celulares')"><i class="fas fa-mobile-alt"></i> Celulares</a></li>
+              <li><a href="#" onclick="filtrarPorCategoria('Computadoras')"><i class="fas fa-laptop"></i> Computadoras</a></li>
+              <li><a href="#" onclick="filtrarPorCategoria('Tablets')"><i class="fas fa-tablet-alt"></i> Tablets</a></li>
+              <li><a href="#" onclick="filtrarPorCategoria('Audio')"><i class="fas fa-headphones-alt"></i> Audio</a></li>
+              <li><a href="#" onclick="filtrarPorCategoria('Accesorios')"><i class="fas fa-keyboard"></i> Accesorios</a></li> 
+            </ul>
+          </div>
+          <div class="filter-price">
+            <h4>Precio</h4>
+            <input type="range" min="0" max="5000000" value="0" class="price-range" oninput="filtrarPorPrecio(this.value)">
+            <p>Valor máximo: $<span class="max-price">5000000</span></p>
+          </div>
+        </aside>
+
+        <div class="products-grid-area"> 
+          <h2>Nuestros Productos</h2>
+
+          <div class="loading"> 
+            <div class="loading-spinner"></div> 
+          </div>
+
+          <div class="product-grid">
+            </div> 
+
+          <div class="pagination">
+            <a href="#" class="prev-page" onclick="mostrarPagina('Anterior')">&laquo; Anterior</a>
+            <a href="#" class="active" onclick="mostrarPagina('1')">1</a>
+            <a href="#" onclick="mostrarPagina('2')">2</a>
+            <a href="#" onclick="mostrarPagina('3')">3</a>
+            <a href="#" class="next-page" onclick="mostrarPagina('Siguiente')">Siguiente &raquo;</a>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Innotech. Todos los derechos reservados.</p> 
+  </div>
+</footer>
+
+<script src="js/script.js" type="module"></script>
+</body>
+</html>

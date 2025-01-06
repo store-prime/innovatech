@@ -1,0 +1,72 @@
+.authentication {
+  padding: 80px 0;
+}
+
+.authentication h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.authentication form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.authentication form div {
+  margin-bottom: 20px;
+}
+
+.authentication label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.authentication input[type="email"],
+.authentication input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.authentication button[type="submit"] {
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authentication button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.authentication a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.authentication a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el botón de "ver contraseña" */
+#showPassword {
+  cursor: pointer;
+  font-size: 0.8em;
+  color: #999;
+  margin-left: 10px;
+}
+
+#showPassword:hover {
+  text-decoration: underline;
+}

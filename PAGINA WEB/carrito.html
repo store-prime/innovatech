@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innotech - Carrito</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/carrito.css">
+  <link rel="stylesheet" href="css/responsive.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo Innotech">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="productos.html"><i class="fas fa-mobile"></i> Productos</a></li>
+        <li><a href="autenticacion.html"><i class="fas fa-user"></i> Autenticación</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cart">
+    <div class="container">
+      <h2>Tu Carrito</h2>
+
+      <div class="cart-items"> 
+      </div> 
+
+      <div class="cart-summary"> 
+        <h3>Resumen del Carrito</h3>
+        <p>Subtotal: <span id="cart-subtotal">0</span></p> 
+        <p>IVA (19%): <span id="cart-iva">0</span></p> 
+        <p>Total: <span id="cart-total">0</span></p> 
+
+        <div id="metodosDePago" style="display: none;"> 
+          <h3>Selecciona un método de pago</h3>
+          <input type="checkbox" id="pagoContraEntrega" onchange="procesarPago('contraentrega')"> <label for="pagoContraEntrega">Pago contra entrega</label><br>
+          <button class="btn" onclick="procesarPago('transferencia')">Pagar con transferencia</button>
+          <div id="datosBancarios" style="display: none;">
+            <p>Banco: [Nombre del banco]</p>
+            <p>Número de cuenta: [Número de cuenta]</p>
+            <p>Titular: [Nombre del titular]</p>
+          </div>
+          <div id="paypal-button-container"></div>
+        </div>
+
+        <!-- Añadir botón para seleccionar métodos de pago -->
+        <button class="btn" onclick="mostrarMetodosDePago()">Seleccionar Método de Pago</button>
+        <!-- Botón para pagar -->
+        <button class="btn" onclick="procesarPago('pagar')">Pagar</button>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Innotech. Todos los derechos reservados.</p> 
+  </div>
+</footer>
+
+<script src="js/script.js" type="module"></script> 
+<script src="js/carrito.js" type="module"></script>
+<script type="module">
+  import { mostrarMetodosDePago, procesarPago } from './js/carrito.js';
+  // Aquí puedes usar las funciones importadas
+  window.mostrarMetodosDePago = mostrarMetodosDePago;
+  window.procesarPago = procesarPago;
+</script>
+<script src="https://www.paypal.com/sdk/js?client-id=AZIe9Bhi6xWvT3sL2DFVt8k9k8LcAGtcEq_HPnHGKQzvyl2NJei74HHRJHkff9L92RFzLTDdxSFUuwnI&currency=USD"></script>
+</body>
+</html>
